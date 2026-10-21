@@ -1,0 +1,20 @@
+[
+  {
+  "id": 1,
+  "kategorija": "Istorija",
+  "pitanje": "Koji rimski car je 313. godine Milanskim ediktom omogućio slobodu ispovedanja hrišćanstva?",
+  "odgovor": "Konstantin Veliki"
+  },
+  {
+    "id": 2,
+    "kategorija": "Istorija",
+    "pitanje": "Koje godine je počela Francuska revolucija?",
+    "odgovor": "1789"
+  },
+  {
+    "id":3 ,
+    "kategorija": "Istorija",
+    "pitanje": "Kako se zvala prva žena koja je samostalno vladala Engleskom kao krunisana kraljica?",
+    "odgovor": "Marija I Tjudor"
+  }
+]
