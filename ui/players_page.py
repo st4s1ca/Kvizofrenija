@@ -1,14 +1,25 @@
-from PySide6.QtWidgets import QWidget, QVBoxLayout, QLabel, QPushButton
+
+from ui.components import (
+    create_panel, create_page,
+    create_title, create_button
+)
 
 
 def create_players_page():
-    page = QWidget()
-    layout = QVBoxLayout(page)
+    panel, layout = create_panel()
 
-    title = QLabel("IGRACI")
+    title, subtitle = create_title(
+        "IGRAČI",
+        "Upravljanje takmičarima i rezultatima"
+    )
+
     layout.addWidget(title)
+    layout.addWidget(subtitle)
+    layout.addSpacing(30)
 
-    back_button = QPushButton("Nazad")
+    back_button = create_button("← Nazad")
     layout.addWidget(back_button)
+
+    page = create_page(panel)
 
     return page, back_button

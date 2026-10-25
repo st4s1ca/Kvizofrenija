@@ -1,0 +1,82 @@
+
+QWidget {
+    background-color: #101827;
+    color: #F1F5F9;
+    font-family: "Segoe UI";
+    font-size: 15px;
+}
+
+QFrame#panel {
+    background-color: #1B2638;
+    border: 1px solid #303E53;
+    border-radius: 18px;
+}
+
+QFrame#gameCard {
+    background-color: #25354B;
+    border: 1px solid #3B4B60;
+    border-radius: 12px;
+}
+
+QLabel {
+    background: transparent;
+    border: none;
+}
+
+QLabel#pageTitle {
+    color: #F8FAFC;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+QLabel#subtitle {
+    color: #94A3B8;
+    font-size: 14px;
+}
+
+QLabel#cardTitle {
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+QPushButton {
+    background-color: #29374B;
+    color: #F1F5F9;
+    border: 1px solid #3B4B60;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 18px;
+    min-height: 30px;
+}
+
+QPushButton:hover {
+    background-color: #354963;
+    border-color: #64748B;
+}
+
+QPushButton:pressed {
+    background-color: #233247;
+}
+
+QPushButton#primaryButton {
+    background-color: #2563EB;
+    border-color: #3B82F6;
+    color: white;
+}
+
+QPushButton#primaryButton:hover {
+    background-color: #3B82F6;
+}
+
+QPushButton#exitButton:hover {
+    background-color: #713044;
+    border-color: #C25A75;
+}
+
+QPushButton:disabled {
+    background-color: #202B3D;
+    color: #728198;
+    border-color: #303E53;
+}
