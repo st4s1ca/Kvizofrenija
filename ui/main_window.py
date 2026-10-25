@@ -32,8 +32,14 @@ def create_main_window(app):
     players_back_button.clicked.connect(lambda: stack.setCurrentWidget(main_menu))
     settings_back_button.clicked.connect(lambda: stack.setCurrentWidget(main_menu))
 
-    klikomanija_button.clicked.connect(lambda: stack.setCurrentWidget(klikomanija_page))
+    def open_klikomanija():
+        klikomanija_page.restart_game()
+        stack.setCurrentWidget(klikomanija_page)
+
+    klikomanija_button.clicked.connect(open_klikomanija)
+
     klikomanija_back_button.clicked.connect(lambda: stack.setCurrentWidget(games_page))
+    klikomanija_page.quiz_finished.connect(lambda: stack.setCurrentWidget(games_page))
     exit_button.clicked.connect(app.quit)
 
     window.resize(1000, 500)

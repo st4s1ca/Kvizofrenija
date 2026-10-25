@@ -80,3 +80,76 @@ QPushButton:disabled {
     color: #728198;
     border-color: #303E53;
 }
+
+QLabel#questionText {
+    color: #FFFFFF;
+    font-size: 27px;
+    font-weight: 700;
+    padding: 12px;
+}
+
+QLabel#answerText {
+    color: #4ADE80;
+    font-size: 21px;
+    font-weight: 700;
+    padding: 12px;
+}
+
+QFrame#playerCard {
+    background-color: #1B2638;
+    border: 2px solid #34445D;
+    border-radius: 16px;
+}
+
+QFrame#playerCard[state="active"] {
+    background-color: #18365B;
+    border: 2px solid #3B82F6;
+}
+
+QFrame#playerCard[state="queued"] {
+    border: 2px solid #EAB308;
+}
+
+QFrame#playerCard[state="correct"] {
+    background-color: #173D30;
+    border: 2px solid #22C55E;
+}
+
+QFrame#playerCard[state="wrong"] {
+    background-color: #45232D;
+    border: 2px solid #EF4444;
+}
+
+QLabel#playerAvatar {
+    color: #93C5FD;
+    font-size: 36px;
+    font-weight: 800;
+    padding: 12px;
+}
+
+QPushButton#correctButton {
+    background-color: #15803D;
+    color: white;
+}
+
+QPushButton#correctButton:hover {
+    background-color: #16A34A;
+}
+
+QPushButton#wrongButton {
+    background-color: #B91C1C;
+    color: white;
+}
+
+QPushButton#wrongButton:hover {
+    background-color: #DC2626;
+}
+
+QDialog {
+    background-color: #1B2638;
+}
+
+QDialog QLabel {
+    font-size: 18px;
+    padding: 15px;
+}
